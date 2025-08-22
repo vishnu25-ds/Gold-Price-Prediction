@@ -114,6 +114,9 @@ EDA helped uncover hidden patterns, correlations, and distributions in the 🪙 
 - Predicted vs. Actual scatter plots for each model:contentReference[oaicite:7]{index=7}
 
 EDA confirmed that **gold prices (GLD)** show significant correlation with both 🪙 silver (SLV) and 💱 EUR/USD, validating their inclusion as predictors.:contentReference[oaicite:8]{index=8}
+
+📌 **Outcome:** Confirmed key correlations (GLD ↔ SLV, GLD ↔ EUR/USD) and identified outliers, ensuring data was ready for robust preprocessing.
+
 ---
 
 
