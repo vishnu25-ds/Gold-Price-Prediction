@@ -395,3 +395,21 @@ GoldPricePrediction/
 ├── README.md                     # Project documentation
 
 ```
+
+---
+
+## 📚 References
+
+- Kaggle Gold Price Dataset → [Gold Price Data](https://www.kaggle.com/datasets/altruistdelhite04/gold-price-data) :contentReference[oaicite:0]{index=0}  
+- scikit-learn Documentation → [https://scikit-learn.org](https://scikit-learn.org)  
+- pandas, NumPy, Matplotlib, Seaborn official docs  
+
+
+---
+
+## 🙏 Acknowledgments
+Special thanks to the University of Memphis faculty and peers who provided feedback and support during the project lifecycle.  
+
+---
+
+
