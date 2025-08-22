@@ -79,6 +79,7 @@ flowchart TB
     class A,B,C1,C2,C3,C4,C5,D,E,F dashed;
 
 ```
+📌 **Outcome:** Established a clear end-to-end ML workflow—from raw market data → preprocessing → model training → evaluation → future predictions.
 
 
 ---
