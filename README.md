@@ -106,7 +106,7 @@ EDA helped uncover hidden patterns, correlations, and distributions in the 🪙 
    - Visualization flagged inconsistencies → corrected during preprocessing  
    - Helped confirm scaling effectiveness (post-`QuantileTransformer`):contentReference[oaicite:6]{index=6}  
 
----
+
 
 📌 **Example Visuals** (generated during analysis):  
 - Distribution plots of all features  
@@ -147,9 +147,37 @@ Preprocessing was essential to ensure the 🪙 gold dataset was consistent, reli
    - Focused on **market indicators**: SPX, GLD, USO, SLV, EUR/USD  
    - Correlation confirmed GLD’s dependence on SLV and EUR/USD:contentReference[oaicite:7]{index=7}  
 
----
+
 
 📌 **Outcome:**  
 A cleaned, scaled dataset that preserved critical relationships among commodities, equities, and currencies—ready for regression model training.  
 
+---
 
+
+
+## 🤖 Models Trained
+
+We implemented and compared multiple regression algorithms for 🪙 gold price prediction:​:contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}
+
+| Model | Advantages | Limitations |
+|-------|------------|-------------|
+| **Linear Regression** | Simple, interpretable | Poor with non-linear relationships; sensitive to outliers |
+| **Support Vector Regression (SVR)** | Captures non-linear trends with kernel trick; flexible margin control | Computationally expensive; requires tuning (kernel, C, epsilon, gamma) |
+| **Decision Tree Regression** | Handles non-linearity; easy to visualize and interpret | Prone to overfitting; unstable with small data changes |
+| **Random Forest Regression** | Robust; reduces overfitting; combines multiple trees | Less interpretable; slower for large datasets |
+| **K-Nearest Neighbors (KNN)** | Intuitive; non-parametric | Poor in high-dimensional data; sensitive to noisy features |
+
+---
+
+### 🔧 Model Training Process
+- Data split into **80% training / 20% testing** sets:contentReference[oaicite:4]{index=4}  
+- Models trained on features: SPX, USO, SLV, EUR/USD  
+- Target: 🪙 Gold Prices (GLD)  
+- SVR tuned with **GridSearchCV** for kernel, C, epsilon, and gamma:contentReference[oaicite:5]{index=5}  
+- Predictions extended to **2019–2033**:contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7}  
+
+---
+
+📌 **Outcome:**  
+Successfully trained 5 regression models and compared performance. Random Forest, Decision Tree, and KNN achieved stronger R² values, while SVR improved after hyperparameter tuning.:contentReference[oaicite:8]{index=8}
