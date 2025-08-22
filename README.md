@@ -348,15 +348,18 @@ git clone https://github.com/<your-username>/GoldPricePrediction.git
 cd GoldPricePrediction
 
 2. **(Optional) Create a Virtual Environment**
+   
 python -m venv venv
 source venv/bin/activate   # On Linux/Mac
 venv\Scripts\activate      # On Windows
 
 3. **Install Dependencies**
+   
    pip install -r requirements.txt
 
 
 4. **Run Preprocessing & Training**
+   
    python code.py
 
 5. **View Results**
