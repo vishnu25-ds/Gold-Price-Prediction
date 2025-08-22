@@ -308,3 +308,60 @@ The models successfully generated **forward-looking predictions for 2019–2033*
 📌 **Outcome:**  
 Delivered a full-cycle ML project with actionable financial forecasts, while identifying clear paths for future enhancement and deployment.  
 
+
+---
+
+## 🛠️ Tech Stack
+
+**Programming & Analysis**
+- Python 3.x  
+- Jupyter Notebook / Python Scripts  
+
+**Data Handling & Preprocessing**
+- pandas, NumPy  
+- scikit-learn (cleaning, scaling, model training, evaluation)  
+- datacleaner, fastEDA  
+
+**Visualization**
+- Matplotlib, Seaborn  
+- Correlation Heatmaps, Boxplots, Scatter Plots  
+
+**Machine Learning Models**
+- Linear Regression  
+- Support Vector Regression (SVR)  
+- Decision Tree Regression  
+- Random Forest Regression  
+- K-Nearest Neighbors (KNN)  
+
+**Project & Environment**
+- Git & GitHub (version control)  
+- Virtualenv / Conda (environment management)  
+- (Optional future) Flask / Streamlit (deployment)  
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the Repository**
+
+git clone https://github.com/<your-username>/GoldPricePrediction.git
+cd GoldPricePrediction
+
+2. **(Optional) Create a Virtual Environment**
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+
+3. **Install Dependencies**
+   pip install -r requirements.txt
+
+
+4. **Run Preprocessing & Training**
+   python code.py
+
+5. **View Results**
+
+- 📊 Evaluation metrics → printed in console (MAE, RMSE, R², MSE)
+- 📉 Visualizations → generated as Matplotlib/Seaborn plots
+- 🔮 Predictions → long-term forecasts (2019–2033)
+---
