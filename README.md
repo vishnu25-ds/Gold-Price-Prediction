@@ -344,14 +344,14 @@ Delivered a full-cycle ML project with actionable financial forecasts, while ide
 
 1. **Clone the Repository**
 
-git clone https://github.com/<your-username>/GoldPricePrediction.git
-cd GoldPricePrediction
+   git clone https://github.com/<your-username>/GoldPricePrediction.git
+   cd GoldPricePrediction
 
 2. **(Optional) Create a Virtual Environment**
    
-python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
+   python -m venv venv
+   source venv/bin/activate   # On Linux/Mac
+   venv\Scripts\activate      # On Windows
 
 3. **Install Dependencies**
    
@@ -360,11 +360,11 @@ venv\Scripts\activate      # On Windows
 
 4. **Run Preprocessing & Training**
    
-   python code.py
+    python code.py
 
 5. **View Results**
 
-- 📊 Evaluation metrics → printed in console (MAE, RMSE, R², MSE)
-- 📉 Visualizations → generated as Matplotlib/Seaborn plots
-- 🔮 Predictions → long-term forecasts (2019–2033)
+   - 📊 Evaluation metrics → printed in console (MAE, RMSE, R², MSE)
+   - 📉 Visualizations → generated as Matplotlib/Seaborn plots
+   - 🔮 Predictions → long-term forecasts (2019–2033)
 ---
