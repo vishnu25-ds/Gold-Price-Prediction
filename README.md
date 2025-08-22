@@ -181,3 +181,36 @@ We implemented and compared multiple regression algorithms for 🪙 gold price p
 
 📌 **Outcome:**  
 Successfully trained 5 regression models and compared performance. Random Forest, Decision Tree, and KNN achieved stronger R² values, while SVR improved after hyperparameter tuning.:contentReference[oaicite:8]{index=8}
+
+
+---
+
+## 📏 Evaluation Metrics
+
+To assess the performance of each model, we used standard regression evaluation metrics:​:contentReference[oaicite:1]{index=1}  
+- **MAE (Mean Absolute Error)** → average absolute difference between predicted & actual values  
+- **MSE (Mean Squared Error)** → penalizes larger errors  
+- **RMSE (Root Mean Squared Error)** → standard deviation of prediction errors  
+- **R² Score** → proportion of variance explained by the model  
+
+---
+
+### 📊 Model Comparison Results
+
+| Model | MAE | RMSE | R² | MSE |
+|-------|-----|------|----|-----|
+| Linear Regression |  —  |  —  |  Low |  High:contentReference[oaicite:2]{index=2} |
+| Support Vector Regression | Improved after tuning | Lower RMSE vs default | Tuned model performed better | — |
+| Decision Tree Regression | Lower error values | Competitive RMSE | Good R² | — |
+| Random Forest Regression | Best overall | Lowest RMSE | Strong R² | Low |
+| K-Nearest Neighbors (KNN) | Strong performer | RMSE comparable to RF | Good R² | — |
+
+*(Detailed numerical results are in the code outputs — printed via `tabulate` function during training):contentReference[oaicite:3]{index=3}*
+
+---
+
+📌 **Outcome:**  
+- **Best performers:** Random Forest, Decision Tree, and KNN (higher R²).  
+- **Weaker performers:** Linear Regression (poor fit), SVR (improved with tuning).  
+- Evaluation confirmed ensemble methods (Random Forest) offered the most stable results for 🪙 gold price prediction.:contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}
+
