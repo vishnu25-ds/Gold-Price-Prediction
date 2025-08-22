@@ -43,3 +43,41 @@ Our dataset is a **financial time series** with 🪙 gold prices and related mar
   - Scaling with `QuantileTransformer` for normalization:contentReference[oaicite:5]{index=5}  
 
 The dataset serves as the foundation for uncovering relationships between **global markets, commodities, and currency exchange** that impact gold price dynamics.
+
+
+
+
+---
+
+## 🏗️ Architecture / Workflow
+
+The workflow follows a **layered ML pipeline** for 🪙 gold price forecasting:​:contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}
+
+```mermaid
+flowchart TB
+    A["📂 Load Dataset (GLD, SPX, USO, SLV, EUR/USD)"]
+    B["🧹 Preprocessing<br/>(Clean, Handle Missing Values,<br/>Outliers, Scaling)"]
+
+    subgraph MODELS["🤖 Model Training"]
+        direction LR
+        C1["Linear Regression"]
+        C2["Support Vector Regression (SVR)"]
+        C3["Decision Tree Regression"]
+        C4["Random Forest Regression"]
+        C5["K-Nearest Neighbors (KNN)"]
+    end
+
+    D["📏 Evaluation (MAE, RMSE, R²)"]
+    E["🔧 Hyperparameter Tuning (SVR, others)"]
+    F["📈 Predictions 2019–2033"]
+
+    %% Flow
+    A --> B --> C1 & C2 & C3 & C4 & C5 --> D --> E --> F
+
+    %% Dashed style for all boxes
+    classDef dashed fill:#fff,stroke:#333,stroke-dasharray: 5 5,color:#111;
+    class A,B,C1,C2,C3,C4,C5,D,E,F dashed;
+
+```
+
+---
