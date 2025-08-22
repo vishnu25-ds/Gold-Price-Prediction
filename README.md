@@ -210,4 +210,34 @@ To measure model performance, we used:
 - **Top performer:** 🏆 KNN with the lowest MAE, RMSE, and highest R² (0.98).  
 - **Close second:** Random Forest (R² = 0.97, very low errors).  
 - **Good performer:** Decision Tree (R² = 0.95, slightly higher errors).  
-- **Weak performers:** Linear Regression & SVR, with higher error values and lower R².  
+- **Weak performers:** Linear Regression & SVR, with higher error values and lower R².
+
+---
+
+## 📊 Results & Predictions (2019–2033)
+
+After training and evaluation, the models were applied to forecast 🪙 gold prices beyond the available dataset.  
+We extended predictions from **2019 → 2033** using the tuned models and normalized features.:contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}
+
+---
+
+### 🔮 Key Insights
+- **KNN** consistently produced the most accurate and stable forecasts (highest R² = 0.98).  
+- **Random Forest** was a strong second, offering smooth predictions with minimal error drift.  
+- **Decision Tree** performed well but slightly less stable compared to Random Forest.  
+- **Linear Regression & SVR** trailed behind, underfitting the non-linear relationships in market data.:contentReference[oaicite:4]{index=4}
+
+---
+
+### 📈 Forecasting Horizon
+- **Training Data Range:** 2008 → 2018  
+- **Prediction Window:** 2019 → 2033:contentReference[oaicite:5]{index=5}  
+- Predictions accounted for correlations with SPX, SLV, USO, and EUR/USD.  
+
+---
+
+📌 **Outcome:**  
+- **Reliable forward predictions** generated for 15 years ahead (2019–2033).  
+- **KNN and Random Forest** emerged as the most dependable models for forecasting 🪙 gold prices.  
+- Provides a valuable **data-driven tool for investors and analysts** in financial markets.  
+
