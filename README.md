@@ -368,3 +368,30 @@ Delivered a full-cycle ML project with actionable financial forecasts, while ide
    - 📉 Visualizations → generated as Matplotlib/Seaborn plots
    - 🔮 Predictions → long-term forecasts (2019–2033)
 ---
+
+
+---
+
+## 📂 Project Structure
+
+```text
+GoldPricePrediction/
+│
+├── data/
+│   └── gld_price_data.csv        # Raw dataset
+│
+├── src/
+│   └── code.py                   # Preprocessing, training, evaluation
+│
+├── reports/
+│   ├── FINAL PROJECT REPORT MACHINE LEARNING.docx
+│   └── GOLD PREDICTION USING ML ALGORITHMS.pptx
+│
+├── notebooks/ (optional)         # For EDA and experiments
+│
+├── predictions/                  # Forecast outputs (2019–2033)
+│
+├── requirements.txt              # Python dependencies
+├── README.md                     # Project documentation
+
+```
