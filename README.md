@@ -241,3 +241,32 @@ We extended predictions from **2019 → 2033** using the tuned models and normal
 - **KNN and Random Forest** emerged as the most dependable models for forecasting 🪙 gold prices.  
 - Provides a valuable **data-driven tool for investors and analysts** in financial markets.  
 
+
+---
+
+## 📉 Visualizations
+
+Visualization played a key role in validating data quality and model performance.:contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}
+
+### 📊 Data Distribution & Cleaning
+- Histograms + Q–Q plots → checked normality of each feature  
+- Boxplots → identified and treated outliers  
+- Heatmaps → revealed correlations (GLD ↔ SLV, GLD ↔ EUR/USD)  
+
+### 🤖 Model Performance Plots
+- **Predicted vs Actual Scatter Plots** for each model:  
+  - Linear Regression → underfit, scattered predictions  
+  - SVR → improved with tuning, still moderate fit  
+  - Decision Tree → strong alignment with actual values  
+  - Random Forest → tight clustering around perfect fit line  
+  - KNN → best alignment with true values (highest R² = 0.98)  
+
+### 🔮 Future Predictions
+- Line plots showing forecasts for **2019–2033** using all models  
+- KNN & Random Forest provided the smoothest and most realistic trendlines:contentReference[oaicite:4]{index=4}
+
+---
+
+📌 **Outcome:**  
+Visualizations confirmed that **KNN and Random Forest** best captured the complex patterns in gold price movements, while also validating data preprocessing (outlier handling + scaling).
+
