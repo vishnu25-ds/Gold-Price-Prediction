@@ -81,3 +81,36 @@ flowchart TB
 ```
 
 ---
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+
+EDA helped uncover hidden patterns, correlations, and distributions in the 🪙 gold dataset before model training.:contentReference[oaicite:2]{index=2}
+
+### 🔎 Steps Performed
+1. **Distribution Analysis**  
+   - Histograms for each variable (GLD, SPX, USO, SLV, EUR/USD)  
+   - Normality check with Q–Q plots:contentReference[oaicite:3]{index=3}  
+
+2. **Correlation & Relationships**  
+   - Scatter plots to examine pairwise relationships  
+   - Correlation heatmap to visualize dependencies across markets  
+   - Strong signals found between GLD, SLV, and EUR/USD:contentReference[oaicite:4]{index=4}  
+
+3. **Outlier Detection**  
+   - Boxplots used to detect extreme values  
+   - Outliers capped using IQR method (whisker width = 2.5):contentReference[oaicite:5]{index=5}  
+
+4. **Validation**  
+   - Visualization flagged inconsistencies → corrected during preprocessing  
+   - Helped confirm scaling effectiveness (post-`QuantileTransformer`):contentReference[oaicite:6]{index=6}  
+
+---
+
+📌 **Example Visuals** (generated during analysis):  
+- Distribution plots of all features  
+- Boxplots before & after outlier treatment  
+- Predicted vs. Actual scatter plots for each model:contentReference[oaicite:7]{index=7}
+
+EDA confirmed that **gold prices (GLD)** show significant correlation with both 🪙 silver (SLV) and 💱 EUR/USD, validating their inclusion as predictors.:contentReference[oaicite:8]{index=8}
+---
