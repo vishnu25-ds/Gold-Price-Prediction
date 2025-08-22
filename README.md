@@ -114,3 +114,38 @@ EDA helped uncover hidden patterns, correlations, and distributions in the 🪙 
 
 EDA confirmed that **gold prices (GLD)** show significant correlation with both 🪙 silver (SLV) and 💱 EUR/USD, validating their inclusion as predictors.:contentReference[oaicite:8]{index=8}
 ---
+
+
+
+
+## 🛠️ Data Preprocessing & Feature Engineering
+
+Preprocessing was essential to ensure the 🪙 gold dataset was consistent, reliable, and ready for model training.  
+
+### 🔧 Key Steps Taken
+1. **Handling Missing Values**  
+   - Checked for nulls and duplicates  
+   - Filled missing values with imputation strategies (mean/mode):contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}  
+
+2. **Outlier Detection & Treatment**  
+   - Boxplots identified extreme values  
+   - Outliers capped using IQR with whisker width = 2.5:contentReference[oaicite:4]{index=4}  
+
+3. **Scaling & Normalization**  
+   - Applied `QuantileTransformer` to normalize distributions  
+   - Ensured features were on comparable scales:contentReference[oaicite:5]{index=5}  
+
+4. **Encoding & Data Types**  
+   - Standardized formats (e.g., Date)  
+   - Converted categorical variables into numeric where required:contentReference[oaicite:6]{index=6}  
+
+5. **Feature Engineering**  
+   - Focused on **market indicators**: SPX, GLD, USO, SLV, EUR/USD  
+   - Correlation confirmed GLD’s dependence on SLV and EUR/USD:contentReference[oaicite:7]{index=7}  
+
+---
+
+📌 **Outcome:**  
+A cleaned, scaled dataset that preserved critical relationships among commodities, equities, and currencies—ready for regression model training.  
+
+---
