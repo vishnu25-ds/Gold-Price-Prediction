@@ -1,66 +1,18 @@
-# Gold Price Prediction and Forecasting
+# 🪙 Gold Price Prediction using Machine Learning Algorithms
 
-This project uses a gold price dataset to predict the "EUR/USD" exchange rate using various regression models. It involves data cleaning, feature engineering, model training, evaluation, and forecasting for future years. The dataset is preprocessed, outliers are handled, and several machine learning algorithms are applied to make predictions. The models evaluated include Linear Regression, Support Vector Regression (SVR), Decision Tree Regressor, Random Forest Regressor, and K-Nearest Neighbors (KNN).
+An end-to-end ML project to forecast gold prices using market indicators (SPX, GLD, USO, SLV, EUR/USD) and multiple regression models (Linear Regression, SVR, Decision Tree, Random Forest, KNN).:contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Data Preprocessing](#data-preprocessing)
-- [Outlier Treatment](#outlier-treatment)
-- [Data Scaling](#data-scaling)
-- [Model Training and Evaluation](#model-training-and-evaluation)
-- [Model Comparison](#model-comparison)
-- [Forecasting Future Values](#forecasting-future-values)
-- [How to Run the Code](#how-to-run-the-code)
-- [Requirements](#requirements)
-- [License](#license)
+---
 
-## Project Overview
+## 🔬 Background & Objectives
 
-This project involves analyzing historical gold price data to predict the future `EUR/USD` exchange rate. The primary steps of the project include:
+The goal is to build a reliable, data-driven framework for predicting gold price movements by learning patterns from historical market data. We leverage diverse algorithms to capture linear and non-linear relationships and compare their performance for practical forecasting.:contentReference[oaicite:2]{index=2}
 
-1. **Data Preprocessing**: Clean and scale the dataset for machine learning.
-2. **Outlier Treatment**: Remove or handle outliers that could negatively impact model performance.
-3. **Feature Engineering**: Create new features and scale the data to improve model performance.
-4. **Model Training**: Train multiple regression models (Linear Regression, SVR, Decision Tree, Random Forest, and KNN).
-5. **Model Evaluation**: Evaluate the models based on performance metrics such as Mean Absolute Error, Mean Squared Error, R-Squared, etc.
-6. **Forecasting**: Predict `EUR/USD` values from 2019 to 2033.
+**Why this matters**
+- Helps investors and analysts assess risk and hedge positions.:contentReference[oaicite:3]{index=3}
+- Turns multi-market signals (equities, commodities, FX) into actionable insights.:contentReference[oaicite:4]{index=4}
 
-## Data Preprocessing
-
-1. **Missing Value Handling**: The dataset is cleaned to remove missing values using the `autoclean` function from the `datacleaner` library.
-2. **Handling Duplicates**: Duplicated rows are removed to ensure data integrity.
-3. **Feature Transformation**: Features are transformed to prepare the data for modeling.
-
-## Outlier Treatment
-
-Outliers are detected and treated using the **Interquartile Range (IQR)** method. Data points that are beyond the upper or lower whiskers are capped to ensure that the models aren't skewed by extreme values.
-
-## Data Scaling
-
-The data is scaled using the **QuantileTransformer** to ensure that all features have a uniform distribution. This helps improve the performance of models like Support Vector Regression (SVR) and K-Nearest Neighbors (KNN).
-
-## Model Training and Evaluation
-
-The following models are trained on the dataset:
-
-- **Linear Regression (LR)**: A simple linear model to predict `EUR/USD`.
-- **Support Vector Regression (SVR)**: A more advanced method for regression that can handle non-linear relationships.
-- **Decision Tree Regressor (DTR)**: A tree-based model that splits the data into branches to make predictions.
-- **Random Forest Regressor (RFR)**: An ensemble method that uses multiple decision trees to make predictions.
-- **K-Nearest Neighbors (KNN)**: A non-parametric method that makes predictions based on the nearest neighbors of a data point.
-
-Each model is evaluated using performance metrics such as Mean Absolute Error, Mean Squared Error, Root Mean Squared Error, and R-Squared.
-
-## Model Comparison
-
-The models are compared based on the following metrics:
-- **Mean Absolute Error (MAE)**
-- **Root Mean Squared Error (RMSE)**
-- **R-Squared (R²)**
-- **Mean Squared Error (MSE)**
-
-This helps in understanding which model is the most accurate and suitable for predicting the gold price.
-
-## Forecasting Future Values
-
-Using the trained models, the `EUR/USD` exchange rate is predicted for the years 2019 to 2033. The predictions for these future years are visualized, comparing the predictions of multiple models (Linear Regression, SVR, Decision Tree, Random Forest, and KNN).
+**Scope (high level)**
+- Inputs (features): Date, S&P 500 (SPX), Gold (GLD), Oil (USO), Silver (SLV), EUR/USD.:contentReference[oaicite:5]{index=5}
+- Models: Linear Regression, Support Vector Regression, Decision Tree, Random Forest, KNN.:contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7}
+- Outputs: Predicted values for forward periods based on learned historical relationships.:contentReference[oaicite:8]{index=8}
